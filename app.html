@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock paper scissor</title>
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+  <div class="container">
+    <div class="app">
+      <h1>Rock Paper Scissor</h1>
+      <div class="move-container">
+        <div class="rock-button move-button">
+          <img id="move-img" src="/Images/rock.png">
+        </div>
+        <div class="paper-button move-button" onclick="checkResult('paper')">
+          <img id="move-img" src="/Images/paper.png">
+        </div>
+        <div class="scissor-button move-button">
+          <img id="move-img" src="/Images/scissor.png">
+        </div>
+      </div>
+      <p class="result">You win</p>
+      <p class="show-move"><img id="player-move" src="/Images/paper.png"> <span>VS</span> <img id="com-move" src="/Images/rock.png"></p>
+      <p class="score-cart"></p>
+      <button class="reset-button">Reset</button><button class="autoplay-button">Autoplay</button>
+    </div>
+  </div>
+
+   <script src="app.js"></script>
+</body>
+</html>
